@@ -6,19 +6,13 @@ jobs:
       - image: circleci/ruby:2.4.1-jessie
     steps:
       - checkout
-      - run: yarn test
+      - run:
+          name: Running tests
+          command: yarn test
       - run: echo "tests complete"
-  # two:
-  #   docker:
-  #     - image: circleci/ruby:2.4.1-jessie
-  #   steps:
-  #     - checkout
-  #     - run: echo "A 2nd hello"
-  #     - run: sleep 15
 # Must excplicitly list the jobs to be run
 workflows:
   version: 2
-  one_and_two:
+  one:
     jobs:
       - one
-      # - two
