@@ -8,7 +8,7 @@ jobs:
       - checkout
       - run:
           name: Running tests
-          command: yarn test
+          command: make test
       - run: echo "tests complete"
 # Must excplicitly list the jobs to be run
 workflows:
