@@ -1,9 +1,12 @@
 import React, { Component } from 'react'
+import PageTop from '../components/page-top';
 
 class About extends Component {
 	render() {
 		return (
-			<div>About</div>
+			<main>
+				<PageTop />
+			</main>
 		)
 	}
 }
