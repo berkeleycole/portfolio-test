@@ -3,9 +3,12 @@ version: 2
 jobs:
   one:
     docker:
-      - image: circleci/ruby:2.4.1-jessie
+      - image: circleci/node:8.11.3
     steps:
       - checkout
+      - run:
+          name: setup dependencies
+          command: 'yarn'
       - run:
           name: Running tests
           command: yarn test
