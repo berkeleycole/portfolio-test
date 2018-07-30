@@ -10,10 +10,10 @@ You can use Probot, a framework for building GitHub Apps, but you do not have to
 
 ### Some details:
 
-[ ] The app only needs to work with a single CI provider (ex: CircleCI, TravisCI, etc).
-[ ] It only needs to work with public repositories.
-[ ] The app can choose to only work with a specific test runner (ex: Jest, Mocha, etc).
-[ ] Your application should have integration/unit tests where applicable.
+- [ ] The app only needs to work with a single CI provider (ex: CircleCI, TravisCI, etc).
+- [ ] It only needs to work with public repositories.
+- [ ] The app can choose to only work with a specific test runner (ex: Jest, Mocha, etc).
+- [ ] Your application should have integration/unit tests where applicable.
 
 ## Submission Instructions
 
