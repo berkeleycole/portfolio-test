@@ -13,6 +13,9 @@ jobs:
           name: Running tests
           command: yarn test --runInBand
       - run: echo "tests complete"
+      - store_test_results:
+          path: ./
+
 # Must excplicitly list the jobs to be run
 workflows:
   version: 2
