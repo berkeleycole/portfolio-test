@@ -4,17 +4,24 @@ jobs:
   one:
     docker:
       - image: circleci/node:8.11.3
+    environment:
+      TEST_RESULTS: /tmp/test-results
     steps:
       - checkout
       - run:
           name: setup dependencies
           command: 'yarn'
       - run:
+          name: copy test results
+          command: |
+            set -xu
+            mkdir -p ${TEST_RESULTS}
+      - run:
           name: Running tests
-          command: yarn test --runInBand
+          command: yarn test --runInBand >> ${TEST_RESULTS}/output.txt
       - run: echo "tests complete"
       - store_test_results:
-          path: ./
+          path: /tmp/test-results
 
 # Must excplicitly list the jobs to be run
 workflows:
