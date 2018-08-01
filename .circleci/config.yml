@@ -18,7 +18,7 @@ jobs:
             mkdir -p ${TEST_RESULTS}
       - run:
           name: Running tests
-          command: yarn test | tee ${TEST_RESULTS}/output.txt
+          command: yarn test --json --runInBand --outputFile=${TEST_RESULTS}/output.txt
       - run: echo "tests complete"
       - store_test_results:
           path: /tmp/test-results
