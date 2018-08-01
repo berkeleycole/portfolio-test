@@ -11,7 +11,7 @@ jobs:
           command: 'yarn'
       - run:
           name: Running tests
-          command: yarn test
+          command: yarn test --runInBand
       - run: echo "tests complete"
 # Must excplicitly list the jobs to be run
 workflows:
