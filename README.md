@@ -22,3 +22,30 @@ A repository with well-documented code and a descriptive README, explaining your
 A second repository in which you've demoed your app, showing an open pull request where your app has created a comment.
 We are also interested in hearing about friction and pain points building this application, using the GitHub API, Probot and interacting with your CI provider of choice. Keep a list of issues you encounter that could be opportunities to improve the implementation or documentation to share with the teams later.
 
+## How it went
+
+This was overall a neat project that taught me a lot about parts of the github ecosystem I hadn't had reason to explore until now. It turned out that my inexperience to the tools was also the biggest challenge. 
+
+### Part 1 - Setting Up 
+
+I started off with the intention of simply getting a Probot app set up and running on any old repository. It all went well, a quick read through the docs, a few silly mistakes and I had the app running locally. The first hard part was understanding how each of these things were connected, it took me a few hours of reading and googling to understand how Github Apps, Github Webhooks, Smee, Probot, and my repository were all connected and how information was supposed to flow.
+
+The biggest time suck was figuring out that the Github App had to request permission for each action from a repo. For hours I couldn't understand why I could interact with github issues but couldn't see a pull request creation event come through. It immediately made sense when I saw the answer, and it made me feel a bit slow, thankfully after that I learned my lesson and that kind of issue never tripped me up for too long afterward. 
+
+### Part 2 - Circle CI
+
+I have worked on projects that already had continuous integration set up - but had never added it to a repo myself. This was the part of the project I actually enjoyed the most, because I've been interested in CI and wanted to know more about it but had never found the time for it. I created a quick repo, looked up the circle ci docs, and tried it out. The initial set up was easier than I expected. 
+
+### Part 3 - Putting it all together
+
+I experienced some frustration trying to put it all together, mostly in trying to understand the Circle CI API and how to isolate the failure message I wanted to add as the pulll request comment. Every night after work this week I spent a few hours playing around with Postman and the Circle CI api, most of the time with little to show at the end. 
+
+Having come this far with the project, if I were to do this all over again I would use Travis instead of Circle for CI because in my research it sounded as if Travis' API is better integrated with Github. May or may not be true but I would like to try it. 
+
+## Conclusion
+
+In conclusion, the pain points were mostly caused by the Circle CI API and Github API having in some ways too much and too broad of documentation, without very many good articles (that I found) to orient a person who is new to the tools. Especially when it came to generating artifacts from a circle ci build. At the same time, it was not a bad experience at all, and I learned a ton.   
+
+
+
+
