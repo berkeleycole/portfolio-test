@@ -4,5 +4,7 @@ import './resets.css';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+// intentional typo in <App />
+
+ReactDOM.render(<Apps />, document.getElementById('root'));
 registerServiceWorker();
