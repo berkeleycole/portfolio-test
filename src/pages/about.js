@@ -6,6 +6,7 @@ class About extends Component {
 		return (
 			<main>
 				<PageTop />
+				<section>stuff</section>
 			</main>
 		)
 	}
