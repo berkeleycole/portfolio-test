@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import About from './about';
+import About from './abouts';
 
 describe('rendering the about page', () => {
 	it('renders without crashing', () => {
