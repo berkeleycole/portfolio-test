@@ -30,6 +30,8 @@ This was overall a neat project that taught me a lot about parts of the github e
 
 I started off with the intention of simply getting a Probot app set up and running on any old repository. It all went well, a quick read through the docs, a few silly mistakes and I had the app running locally. The first hard part was understanding how each of these things were connected, it took me a few hours of reading and googling to understand how Github Apps, Github Webhooks, Smee, Probot, and my repository were all connected and how information was supposed to flow.
 
+The time I spent looking up the documentation of each indivual technology was not unexpected, but honestly it seemed like a missed opportunity on the part of Probot. If Probot wants to be the primary framework for building Github Apps, then it would be awesome if they wrote the primer on how all of these technologies come together. It would make them the easy choice for many developers that want to build their first Github App. 
+
 The biggest time suck was figuring out that the Github App had to request permission for each action from a repo. For hours I couldn't understand why I could interact with github issues but couldn't see a pull request creation event come through. It immediately made sense when I saw the answer, and it made me feel a bit slow, thankfully after that I learned my lesson and that kind of issue never tripped me up for too long afterward. 
 
 ### Part 2 - Circle CI
