@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import Apps from './App';
+
+// intentional typo in import
 
 describe('rendering the root component', () => {
 	it('renders without crashing', () => {
